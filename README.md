@@ -1,27 +1,31 @@
 # Blog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+Este é um projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 6.0.8.
+Utilizei o comando `ng new blog --style=sass` para gerar a estrutura do projeto configurado com o SASS.
+O objetivo deste projeto é criar uma tela para listar os títulos dos posts para o usuário, além de exibir informações complementares (nome, email) do autor, conforme clique (vínculado ao userId) no título do post.
 
-## Development server
+Estou consumindo os dados da API: `http://jsonplaceholder.typicode.com/`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Como rodar a aplicação em modo de desenvolvimento?
 
-## Code scaffolding
+Abra o terminal e execute o comando `ng serve -o`. Pronto, em alguns segundos o navegador ira abrir automaticamente no endereço `http://localhost:4200/`. Agora é a parte mais legal, qualquer alteração que for realizada será refletida no navegador em tempo de execução.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Scaffolding: Como gerar novos componentes?
 
-## Build
+Execute o comando `ng generate component component-name` e um novo componente será gerado. Você pode utilizar outros parametros `ng generate directive|pipe|service|class|guard|interface|enum|module`. Se quiser pode abreviar o comando utilizando: `ng g c component-name`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Build: Como gerar o pacote da aplicação (dev e prod)?
 
-## Running unit tests
+Execute o comando `ng build` gerar o pacote de desenvolvimento. Será gerada uma pasta com o nome `dist/` que contém os arquivos necessários para rodar a aplicação. Utilize a flag `--prod` gerar uma versão otimizada para produção. Ou seja, execute o comando `ng build --prod`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Como executar os testes unitários?
 
-## Running end-to-end tests
+Execute o comando `ng test`, então o [Karma](https://karma-runner.github.io) vai rodar os testes e abrir o navegador para apresentar o resultado.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Como executar os testes de integração ou end-to-end (e2e)?
 
-## Further help
+Execute o comando `ng e2e`, então o [Protractor](http://www.protractortest.org/) vai rodar os testes e abrir o navegador para apresentar o resultado.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Apredendo mais sobre o Angular CLI
+
+Execute o comando`ng help` e saiba mais sobre o Angular CLI. Você também pode consultar o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
