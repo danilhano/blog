@@ -1,8 +1,17 @@
 
-<aside>
-    <h2>Autor do Post</h2>
-    <p>Nome: {{autor.name}}</p>
-    <p>Email: {{autor.email}}</p>
+<aside class="autor-style">
+  <div *ngIf="autor.id; else selecioneAlgo">
+      <p><span>Identificação do Autor:</span> {{autor.id}}</p>
+      <p><span>Nome: </span>{{autor.name}}</p>
+      <p><span>Email: </span>{{autor.email}}</p>  
+  </div>
+
+  <ng-template #selecioneAlgo>
+      <h3>Selecione um Post</h3>
+    </ng-template>
+     
+    
+
 </aside>
 
 
@@ -10,5 +19,5 @@
 
 <h3>{{errorMsg}}</h3>
 <ul *ngFor="let post of posts">
-  <li (click)="listarAutor(post.userId)">Titulo: {{post.title}}</li>
+  <li (click)="listarAutor(post.userId)"><span>{{post.id}}</span> {{post.title}}</li>
 </ul>
