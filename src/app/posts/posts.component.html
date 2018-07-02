@@ -1,3 +1,6 @@
-<p>
-  posts works!
-</p>
+<h2>Posts - exibindo {{posts.length}}</h2>
+
+<h3>{{errorMsg}}</h3>
+<ul *ngFor="let post of posts">
+  <li>Titulo: {{post.title}}</li>
+</ul>
